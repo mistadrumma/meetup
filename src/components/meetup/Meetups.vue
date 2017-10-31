@@ -3,7 +3,7 @@
 
 			<v-layout row wrap class="mt-4" >
 				<v-flex xs12 sm10 md8 offset-sm1 offset-md2>
-					<v-card class="info">
+					<v-card class="">
 						<v-container fluid>
 							<v-layout>
 								<v-flex xs5 sm4 md3>
@@ -13,10 +13,10 @@
 
                       ></v-card-media>
 								</v-flex>
-								<v-flex xs7 sn8 md9>
-									<v-card-title primary-title class="pb-0">
+								<v-flex xs3 sm3 md3>
+									<v-card-title primary-title class="pb-0 pt-1">
 										<div class="">
-											<h5 class="white--text mb-0 ">
+											<h5 class="accent--text mb-0 ">
 												My Meetup
 											</h5>
 											<div class="mt-0">
@@ -25,10 +25,16 @@
 										</div>
 									</v-card-title>
 									<v-card-actions class="">
-										<v-btn class="mt-0" flat>
-											<v-icon left light>arrow_forward</v-icon>
-											View Meetup</v-btn>
+										<v-btn to="/meetup/1" class="mt-4" flat>
+												View Meetup
+												<v-icon right light>arrow_forward</v-icon>
+										</v-btn>
 									</v-card-actions>
+								</v-flex >
+								<v-flex xs4 sm7 md6>
+									<v-card-text class="pt-2">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+									</v-card-text>
 								</v-flex>
 							</v-layout>
 						</v-container>

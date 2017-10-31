@@ -24,6 +24,12 @@
 							sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</div>
 				</v-card-text>
+				<v-card-actions>
+					<v-spacer></v-spacer>
+					<v-btn class="primary mr-3 mb-3" dark>
+						Register
+					</v-btn>
+				</v-card-actions>
 			</v-card>
 		</v-flex>
 	</v-layout>
