@@ -52,3 +52,9 @@
   }
 
 </script>
+
+<style lang="css">
+.container {
+		margin: 0 auto;
+}
+</style>
