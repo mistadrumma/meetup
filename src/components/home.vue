@@ -22,7 +22,7 @@
 			 @click="OnLoadMeetup(meetup.id)"
 			 >
 			 <div class="title0">
-				 	{{ meetup.title }}
+				 	<h3>**{{ meetup.title }}</h3>
 			 </div>
 		 </v-carousel-item>
 		 </v-carousel>
@@ -40,13 +40,11 @@
 export default {
 	data () {
 		return {
-			meetups: [
-				{ imageUrl: 'https://static.pexels.com/photos/450597/pexels-photo-450597.jpeg', id: '1', title: 'Meet up in New York' },
-				{ imageUrl: 'https://static.pexels.com/photos/587839/pexels-photo-587839.jpeg', id: '2', title: 'Meet up in New Paris' },
-				{ imageUrl: 'https://static.pexels.com/photos/417430/pexels-photo-417430.jpeg', id: '3', title: 'Meet up in New Moscow' },
-				{ imageUrl: 'https://static.pexels.com/photos/374815/pexels-photo-374815.jpeg', id: '4', title: 'Meet up in New London' },
-			]
-
+		}
+	},
+	computed: {
+		meetups() {
+			return this.$store.getters.featuredMeetups
 		}
 	},
 	methods: {
